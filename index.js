@@ -19,7 +19,7 @@ app.get('/', async (req, res) => {
   const url = `https://api.hubapi.com/crm/v3/objects/${OBJECT_TYPE}?properties=name,species,bio`;
   try {
     const resp = await axios.get(url, { headers });
-    res.render('homepage', { title: 'Pets | Integrating With HubSpot I Practicum', data: resp.data.results });
+    res.render('home', { title: 'Pets | Integrating With HubSpot I Practicum', data: resp.data.results });
   } catch (error) {
     console.error(error.response?.data || error.message);
     res.status(500).send('Could not load pets');
@@ -28,7 +28,7 @@ app.get('/', async (req, res) => {
 
 // Form page
 app.get('/update-cobj', (req, res) => {
-  res.render('updatePets', { title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' });
+  res.render('updates', { title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' });
 });
 
 // Create a new pet from the form, then go home
