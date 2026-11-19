@@ -1,58 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 1rem;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-.card__email {
-    font-size: 1rem;
-}
-
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-label, input {
-    margin-top: 5px;
-    display: block;
-    font-size: inherit;
-}
-
-input[type="text"] {
-    padding: .25rem;
-}
-
-input[type="submit"] {
-    background-color: lightgrey;
-    border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
-}
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: #f5f8fa; color: #33475b; margin: 0; padding: 32px 16px; }
+.container { max-width: 800px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+h1 { margin-top: 16px; }
+a { color: #0091ae; }
+.button { display: inline-block; background: #ff7a59; color: #fff; padding: 10px 16px; border-radius: 4px; text-decoration: none; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #dfe3eb; }
+th { background: #eaf0f6; }
+form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+input { padding: 10px; border: 1px solid #cbd6e2; border-radius: 4px; font-size: 15px; }
+button { margin-top: 8px; background: #ff7a59; color: #fff; border: none; padding: 12px; border-radius: 4px; font-size: 15px; cursor: pointer; }

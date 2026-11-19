@@ -37,7 +37,7 @@ app.post('/update-cobj', async (req, res) => {
     properties: {
       name: req.body.name,
       species: req.body.species,
-      breed: req.body.bio
+      bio: req.body.bio
     }
   };
   try {
